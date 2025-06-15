@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.inline { display: inline; background: lightblue; padding: 5px; }
+.block { display: block; background: lightgreen; padding: 5px; margin-top: 10px; }
+.inline-block { display: inline-block; background: lightcoral; padding: 5px; margin-top: 10px; }
+.none { display: none; }
+
+.relative-demo {
+    position: relative;
+    height: 300px;
+    border: 1px solid #ccc;
+}
+
+.static { position: static; background: lightblue; padding: 10px; }
+.relative { position: relative; top: 20px; left: 20px; background: lightgreen; padding: 10px; }
+.absolute { position: absolute; top: 50px; left: 150px; background: lightcoral; padding: 10px; }
+.fixed { position: fixed; top: 10px; right: 10px; background: orange; padding: 10px; }
+
+.zindex-demo { position: relative; height: 300px; }
+.caja1, .caja2, .caja3 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+.caja1 { background: red; top: 50px; left: 50px; z-index: 1; }
+.caja2 { background: green; top: 80px; left: 80px; z-index: 3; }
+.caja3 { background: blue; top: 110px; left: 110px; z-index: 2; }
