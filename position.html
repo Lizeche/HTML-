@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Position</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
     <nav>
@@ -11,20 +11,36 @@
         <a href="position.html">Position</a>
         <a href="zindex.html">Z-Index</a>
     </nav>
+
     <main class="relative-demo">
-        <h1>Position</h1>
-        <p>Valores comunes:</p>
-        <ul>
-            <li><strong>static</strong></li>
-            <li><strong>relative</strong></li>
-            <li><strong>absolute</strong></li>
-            <li><strong>fixed</strong></li>
-        </ul>
-        <h2>Ejemplo:</h2>
-        <div class="static">Static</div>
-        <div class="relative">Relative</div>
-        <div class="absolute">Absolute</div>
-        <div class="fixed">Fixed</div>
+      <center> <h1>Position</h1>
+<hr>
+        <section>
+            <h2>Position:static</h2>
+            <div class="box static">Static Ejemplo</div>
+        </section>
+<hr>
+        <section>
+            <h2>Position:relative</h2>
+            <div class="box relative">Relative Ejemplo </div>
+        </section>
+
+        <section style="position: relative; height: 200px; border: 1px solid #ccc; margin-bottom: 30px;">
+            <h2>Position:absolute</h2>
+            <div class="box absolute">Absolute Ejemplo</div>
+        </section>
+
+        <section>
+            <h2>Position:fixed</h2>
+            <div class="box fixed">Fixed Ejemplo</div>
+        </section>
+
+        <section style="height: 300px; overflow-y: auto; border: 1px solid #ccc; margin-top: 40px;">
+            <h2>Position:sticky</h2>
+            <div class="box sticky">Sticky Ejemplo</div>
+            <p style="margin-top: 400px;"></p>
+        </section></center> 
+
     </main>
 </body>
 </html>
