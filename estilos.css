@@ -1,49 +1,136 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 0; 
     padding: 0;
+    background: #d7f5f9;
+    color: #333;
 }
-
 nav {
     background: #333;
-    padding: 10px;
+    padding: 10px 20px;
 }
-
 nav a {
     color: white;
-    margin: 10px;
+    margin-right: 15px;
     text-decoration: none;
+    font-weight: 600;
+    cursor: default;
 }
 
-main {
-    padding: 20px;
+.display-demo {
+    margin-bottom: 40px;
 }
-
-.inline { display: inline; background: lightblue; padding: 5px; }
-.block { display: block; background: lightgreen; padding: 5px; margin-top: 10px; }
-.inline-block { display: inline-block; background: lightcoral; padding: 5px; margin-top: 10px; }
-.none { display: none; }
-
-.relative-demo {
-    position: relative;
-    height: 300px;
-    border: 1px solid #ccc;
+.display-demo h2 {
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #555;
 }
-
-.static { position: static; background: lightblue; padding: 10px; }
-.relative { position: relative; top: 20px; left: 20px; background: lightgreen; padding: 10px; }
-.absolute { position: absolute; top: 50px; left: 150px; background: lightcoral; padding: 10px; }
-.fixed { position: fixed; top: 10px; right: 10px; background: orange; padding: 10px; }
-
-.zindex-demo { position: relative; height: 300px; }
-.caja1, .caja2, .caja3 {
-    position: absolute;
-    width: 100px;
-    height: 100px;
+.box {
+    padding: 15px 25px;
     color: white;
-    text-align: center;
-    line-height: 100px;
+    font-weight: bold;
+    border-radius: 8px;
+    width: max-content;
+    user-select: none;
+    cursor: default;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
-.caja1 { background: red; top: 50px; left: 50px; z-index: 1; }
-.caja2 { background: green; top: 80px; left: 80px; z-index: 3; }
-.caja3 { background: blue; top: 110px; left: 110px; z-index: 2; }
+.block {
+    display: block;
+    background-color: #bb4acd;
+    margin-bottom: 10px;
+}
+.inline {
+    display: inline;
+    background-color: #bb4acd;
+}
+.inline-block {
+    display: inline-block;
+    background-color: #bb4acd;
+}
+.none {
+    display: none;
+}
+.relative-demo section {
+    margin-bottom: 40px;
+}
+.relative-demo h2 {
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #555;
+}
+.static {
+    position: static;
+    background-color: #bb4acd;
+}
+.relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: #bb4acd;
+}
+.absolute {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #bb4acd;
+}
+.fixed {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #bb4acd;
+    z-index: 9999;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #bb4acd;
+    z-index: 10;
+}
+.relative-demo section.absolute-container {
+    position: relative;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+.relative-demo section.sticky-container {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    margin-top: 40px;
+}
+.relative-demo section.sticky-container p {
+    margin-top: 400px;
+    padding: 0 10px;
+    color: #555;
+}
+.caja1 {
+    width: 200px;
+    height: 200px;
+    background: #bb4acd;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+.caja2 {
+    width: 200px;
+    height: 200px;
+    background: #bb4acd;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 2;
+}
+.caja3 {
+    width: 200px;
+    height: 200px;
+    background: #bb4acd;
+    position: absolute;
+    top: 110px;
+    left: 110px;
+    z-index: 3s;
+}
