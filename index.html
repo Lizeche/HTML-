@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Display</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
     <nav>
@@ -11,20 +11,33 @@
         <a href="position.html">Position</a>
         <a href="zindex.html">Z-Index</a>
     </nav>
+
     <main>
-        <h1>Display</h1>
-        <p>Valores comunes:</p>
-        <ul>
-            <li><strong>block</strong></li>
-            <li><strong>inline</strong></li>
-            <li><strong>inline-block</strong></li>
-            <li><strong>none</strong></li>
-        </ul>
-        <h2>Ejemplo:</h2>
-        <div class="inline">Inline</div>
-        <div class="block">Block</div>
-        <div class="inline-block">Inline-Block</div>
-        <div class="none">Este no se muestra (none)</div>
+       <center><h1>Display</h1>
+<hr>
+        <section class="display-demo">
+            <h2>display: block</h2><br>
+            <div class="box block">Contenido</div>
+            <div class="box block">contenido</div>
+        </section>
+<hr>
+        <section class="display-demo">
+            <h2>display: inline</h2><br><br>
+            <div class="box inline">A</div>
+            <div class="box inline">B</div>
+            <div class="box inline">C</div>
+        </section>
+<hr>
+        <section class="display-demo">
+            <h2>display: inline-block</h2>
+            <div class="box inline-block">Caja 1</div>
+            <div class="box inline-block">Caja 2</div>
+        </section>
+<hr>
+        <section class="display-demo">
+            <h2>display: none</h2><br>
+            <div class="box none">No se muestra</div>
+        </section></center> 
     </main>
 </body>
 </html>
